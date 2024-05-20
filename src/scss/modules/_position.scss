@@ -1,0 +1,7 @@
+$position: "static", "fixed", "absolute", "relative", "sticky";
+
+@each $prop in $position {
+	.#{$prop} {
+		position: #{$prop};
+	}
+}

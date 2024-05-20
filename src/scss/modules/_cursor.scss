@@ -1,0 +1,8 @@
+$cursor: "auto", "default", "pointer", "wait", "text", "move", "not-allowed", "help", "none", "grab", "zoom-in",
+	"zoom-out";
+
+@each $prop in $cursor {
+	.cursor-#{$prop} {
+		cursor: #{$prop};
+	}
+}

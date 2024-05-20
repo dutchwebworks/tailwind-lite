@@ -1,0 +1,43 @@
+@for $i from 0 through 12 {
+	.grid-cols-#{$i} {
+		grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+	}
+}
+
+@for $i from 0 through 12 {
+	.grid-rows-#{$i} {
+		grid-template-rows: repeat(#{$i}, minmax(0, 1fr));
+	}
+}
+
+.grid-cols-none {
+	grid-template-columns: none;
+}
+
+.grid-cols-subgrid {
+	grid-template-columns: subgrid;
+}
+
+@for $i from 0 through 12 {
+	.col-span-#{$i} {
+		grid-column: span #{$i} / span #{$i};
+	}
+}
+
+@for $i from 0 through 12 {
+	.row-span-#{$i} {
+		grid-row: span #{$i} / span #{$i};
+	}
+}
+
+@for $i from 0 through 12 {
+	.col-start-#{$i} {
+		grid-column-start: #{$i};
+	}
+}
+
+@for $i from 0 through 12 {
+	.row-start-#{$i} {
+		grid-row-start: #{$i};
+	}
+}

@@ -1,0 +1,6 @@
+@for $i from 0 through 100 {
+	.size-#{$i} {
+		width: #{$i} + "px";
+		height: #{$i} + "px";
+	}
+}

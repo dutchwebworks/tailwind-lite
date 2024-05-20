@@ -1,0 +1,7 @@
+$float: "none", "start", "end", "initial", "inherit";
+
+@each $prop in $float {
+	.float-#{$prop} {
+		float: #{$prop};
+	}
+}

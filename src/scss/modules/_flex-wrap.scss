@@ -1,0 +1,7 @@
+$flexWrap: "wrap", "nowrap", "wrap-reverse";
+
+@each $prop in $flexWrap {
+	.flex-#{$prop} {
+		flex-wrap: #{$prop};
+	}
+}

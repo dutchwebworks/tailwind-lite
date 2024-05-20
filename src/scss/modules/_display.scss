@@ -1,0 +1,7 @@
+$display: "none", "inline", "inline-block", "block", "table", "table-cell", "flex", "inline-flex";
+
+@each $prop in $display {
+	.#{$prop} {
+		display: #{$prop};
+	}
+}

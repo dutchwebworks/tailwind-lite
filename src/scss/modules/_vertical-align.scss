@@ -1,0 +1,7 @@
+$verticalAlign: "baseline", "sub", "super", "top", "text-top", "middle", "bottom", "text-bottom";
+
+@each $prop in $verticalAlign {
+	.align-#{$prop} {
+		vertical-align: #{$prop};
+	}
+}

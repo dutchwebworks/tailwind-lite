@@ -1,0 +1,7 @@
+$whiteSpace: "normal", "nowrap", "pre", "pre-line", "pre-wrap", "break-spaces";
+
+@each $prop in $whiteSpace {
+	.whitespace-#{$prop} {
+		white-space: #{$prop};
+	}
+}

@@ -1,0 +1,7 @@
+$alignContent: "normal", "start", "end", "center", "between", "around", "evenly", "baseline", "stretch";
+
+@each $prop in $alignContent {
+	.align-content-#{$prop} {
+		align-content: #{$prop};
+	}
+}

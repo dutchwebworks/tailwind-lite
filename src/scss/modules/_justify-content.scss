@@ -1,0 +1,7 @@
+$justifyContent: "normal", "start", "end", "center", "between", "around", "evenly", "stretch";
+
+@each $prop in $justifyContent {
+	.justify-content-#{$prop} {
+		justify-content: #{$prop};
+	}
+}

@@ -1,0 +1,7 @@
+$flexDirection: "row", "row-reverse", "column", "column-reverse";
+
+@each $prop in $flexDirection {
+	.flex-#{$prop} {
+		flex-direction: #{$prop};
+	}
+}

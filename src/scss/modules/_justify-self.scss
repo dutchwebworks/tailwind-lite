@@ -1,0 +1,7 @@
+$justifySelf: "auto", "start", "end", "center", "stretch";
+
+@each $prop in $justifySelf {
+	.justify-self-#{$prop} {
+		justify-self: #{$prop};
+	}
+}

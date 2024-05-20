@@ -1,0 +1,11 @@
+$textTransform: "uppercase", "lowercase", "capitalize";
+
+@each $prop in $textTransform {
+	.#{$prop} {
+		text-transform: #{$prop};
+	}
+}
+
+.normal-case {
+	text-transform: none;
+}

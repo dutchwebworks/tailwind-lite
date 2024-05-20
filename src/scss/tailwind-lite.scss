@@ -1,195 +1,57 @@
-$spacing: ();
+// Config
+// prettier-ignore
+@import 
+	"config/screens",
+	"config/spacing";
 
-@for $i from 0 through 50 {
-	@if $i % 2 == 0 {
-		$spacing: map-merge(
-			$spacing,
-			(
-				$i: $i + "px",
-			)
-		);
-	}
-}
+// Helpers
+// prettier-ignore
+@import 
+	"helpers/size",
+	"helpers/screen-readers";
 
-$breakpoints: (
-	sm: "640px",
-	md: "768px",
-	lg: "1024px",
-	xl: "1280px",
-	"2xl": "1440px",
-);
-
-$fontSize: (
-	sm: "14px",
-	md: "16px",
-	lg: "18px",
-	xl: "20px",
-	"2xl": "24px",
-	"3xl": "28px",
-	"4xl": "32px",
-	"5xl": "36px",
-	"6xl": "42px",
-	"7xl": "48px",
-	"8xl": "56px",
-	"9xl": "64px",
-);
-
-@each $key, $value in $fontSize {
-	.text-#{$key} {
-		font-size: #{$value};
-	}
-}
-
-/*
-
-DISPLAY
-
-*/
-
-$display: "none", "inline", "inline-block", "block", "table", "table-cell", "flex", "inline-flex";
-
-@each $prop in $display {
-	.#{$prop} {
-		display: #{$prop};
-	}
-}
-
-/*
-
-Position
-
-*/
-
-$position: "static", "fixed", "absolute", "relative", "sticky";
-
-@each $prop in $position {
-	.#{$prop} {
-		position: #{$prop};
-	}
-}
-
-/*
-
-Z-index
-
-*/
-
-@for $i from 0 through 10 {
-	.z-#{$i} {
-		z-index: #{$i};
-	}
-}
-
-/*
-
-INSET
-
-*/
-
-@each $size, $value in $spacing {
-	.iis-#{$size} {
-		inset-inline-start: #{$value};
-	}
-}
-
-@each $size, $value in $spacing {
-	.iie-#{$size} {
-		inset-inline-end: #{$value};
-	}
-}
-
-@each $size, $value in $spacing {
-	.ibs-#{$size} {
-		inset-block-start: #{$value};
-	}
-}
-
-@each $size, $value in $spacing {
-	.ibe-#{$size} {
-		inset-block-end: #{$value};
-	}
-}
-
-/*
-
-FONT-SIZE
-
-*/
-
-@each $size, $value in $spacing {
-	.text-#{$size} {
-		font-size: #{$value};
-	}
-}
-
-/*
-
-FONT-WEIGHT
-
-*/
-
-@for $i from 1 through 9 {
-	.font-#{$i * 100} {
-		font-weight: ($i * 100);
-	}
-}
-
-/*
-
-MARGIN
-
-*/
-
-@each $size, $value in $spacing {
-	.mis-#{$size} {
-		margin-inline-start: #{$value};
-	}
-}
-
-@each $size, $value in $spacing {
-	.mie-#{$size} {
-		margin-inline-end: #{$value};
-	}
-}
-
-@each $size, $value in $spacing {
-	.mbs-#{$size} {
-		margin-block-start: #{$value};
-	}
-}
-
-@each $size, $value in $spacing {
-	.mbe-#{$size} {
-		margin-block-start: #{$value};
-	}
-}
-
-/*
-
-PADDING
-
-*/
-
-@each $size, $value in $spacing {
-	.pis-#{$size} {
-		margin-inline-start: #{$value};
-	}
-}
-
-@each $size, $value in $spacing {
-	.pie-#{$size} {
-		margin-inline-end: #{$value};
-	}
-}
-
-@each $size, $value in $spacing {
-	.pbs-#{$size} {
-		margin-inline-start: #{$value};
-	}
-}
-
-@each $size, $value in $spacing {
-	.pbe-#{$size} {
-		margin-inline-start: #{$value};
-	}
-}
+// Modules
+// prettier-ignore
+@import 
+	"modules/align-content",
+	"modules/align-items",
+	"modules/align-self",	
+	"modules/border-radius",
+	"modules/box-sizing",
+	"modules/clear",
+	"modules/columns",
+	"modules/cursor",
+	"modules/display",
+	"modules/flex-basis",
+	"modules/flex-direction",
+	"modules/flex-grow",
+	"modules/flex-shrink",
+	"modules/flex-wrap",
+	"modules/float",
+	"modules/font-size",
+	"modules/font-style",
+	"modules/font-weight",
+	"modules/gap",
+	"modules/grid",
+	"modules/height",
+	"modules/inset",
+	"modules/justify-content",
+	"modules/justify-items",
+	"modules/justify-self",
+	"modules/margin",
+	"modules/max-height",
+	"modules/min-height",
+	"modules/max-width",
+	"modules/min-width",
+	"modules/order",
+	"modules/overflow",
+	"modules/padding",
+	"modules/position",	
+	"modules/text-align",
+	"modules/text-decoration",
+	"modules/text-transform",
+	"modules/vertical-align",
+	"modules/visibility",
+	"modules/white-space",
+	"modules/width",
+	"modules/z-index";

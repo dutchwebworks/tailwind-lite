@@ -1,0 +1,7 @@
+$alignItems: "start", "end", "left", "right", "both", "none";
+
+@each $prop in $alignItems {
+	.clear-#{$prop} {
+		clear: #{$prop};
+	}
+}

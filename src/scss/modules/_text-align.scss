@@ -1,0 +1,7 @@
+$textAlign: "left", "right", "center", "justify", "text-start", "text-end";
+
+@each $prop in $textAlign {
+	.text-#{$prop} {
+		text-align: #{$prop};
+	}
+}

@@ -1,0 +1,11 @@
+$textDecoration: "underline", "overline", "line-through";
+
+@each $prop in $textDecoration {
+	.#{$prop} {
+		text-decoration: #{$prop};
+	}
+}
+
+.no-underline {
+	text-decoration: none;
+}

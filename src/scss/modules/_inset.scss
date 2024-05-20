@@ -1,0 +1,23 @@
+@each $size, $value in $spacing {
+	.iis-#{$size} {
+		inset-inline-start: #{$value};
+	}
+}
+
+@each $size, $value in $spacing {
+	.iie-#{$size} {
+		inset-inline-end: #{$value};
+	}
+}
+
+@each $size, $value in $spacing {
+	.ibs-#{$size} {
+		inset-block-start: #{$value};
+	}
+}
+
+@each $size, $value in $spacing {
+	.ibe-#{$size} {
+		inset-block-end: #{$value};
+	}
+}

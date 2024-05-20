@@ -1,0 +1,11 @@
+$visibility: "visible", "collapse";
+
+@each $prop in $visibility {
+	.#{$prop} {
+		visibility: #{$prop};
+	}
+}
+
+.invisible {
+	visibility: hidden;
+}

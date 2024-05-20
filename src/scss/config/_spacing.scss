@@ -1,0 +1,12 @@
+$spacing: ();
+
+@for $i from 0 through 50 {
+	@if $i % 2 == 0 {
+		$spacing: map-merge(
+			$spacing,
+			(
+				$i: $i + "px",
+			)
+		);
+	}
+}

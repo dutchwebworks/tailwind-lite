@@ -1,0 +1,7 @@
+$justifyItems: "start", "end", "center", "stretch";
+
+@each $prop in $justifyItems {
+	.justify-items-#{$prop} {
+		justify-items: #{$prop};
+	}
+}

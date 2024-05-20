@@ -1,0 +1,23 @@
+@each $size, $value in $spacing {
+	.mis-#{$size} {
+		margin-inline-start: #{$value};
+	}
+}
+
+@each $size, $value in $spacing {
+	.mie-#{$size} {
+		margin-inline-end: #{$value};
+	}
+}
+
+@each $size, $value in $spacing {
+	.mbs-#{$size} {
+		margin-block-start: #{$value};
+	}
+}
+
+@each $size, $value in $spacing {
+	.mbe-#{$size} {
+		margin-block-start: #{$value};
+	}
+}

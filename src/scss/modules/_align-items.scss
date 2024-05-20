@@ -1,0 +1,7 @@
+$alignItems: "start", "end", "center", "baseline", "stretch";
+
+@each $prop in $alignItems {
+	.items-#{$prop} {
+		align-items: #{$prop};
+	}
+}
