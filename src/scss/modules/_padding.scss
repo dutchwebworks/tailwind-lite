@@ -1,23 +1,23 @@
 @each $size, $value in $spacing {
 	.pis-#{$size} {
-		margin-inline-start: #{$value};
+		padding-inline-start: #{$value};
 	}
 }
 
 @each $size, $value in $spacing {
 	.pie-#{$size} {
-		margin-inline-end: #{$value};
+		padding-inline-end: #{$value};
 	}
 }
 
 @each $size, $value in $spacing {
 	.pbs-#{$size} {
-		margin-inline-start: #{$value};
+		padding-inline-start: #{$value};
 	}
 }
 
 @each $size, $value in $spacing {
 	.pbe-#{$size} {
-		margin-inline-start: #{$value};
+		padding-inline-start: #{$value};
 	}
 }
