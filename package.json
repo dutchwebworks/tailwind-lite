@@ -1,0 +1,22 @@
+{
+    "scripts": {
+        "build": "vite build",
+        "watch": "vite build -w --emptyOutDir",
+        "dev": "vite"
+    },
+    "license": "WTFPL",
+    "type": "module",
+    "private": true,
+    "dependencies": {
+        "vue": "^3.4.27"
+    },
+    "packageManager": "yarn@3.3.1",
+    "devDependencies": {
+        "fast-glob": "^3.3.2",
+        "is-wsl": "^3.1.0",
+        "sass": "^1.77.0",
+        "typescript": "^5.4.5",
+        "vite": "5.2.11",
+        "vue-tsc": "^2.0.16"
+    }
+}
