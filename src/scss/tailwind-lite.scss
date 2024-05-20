@@ -4,12 +4,6 @@
 	"config/screens",
 	"config/spacing";
 
-// Helpers
-// prettier-ignore
-@import 
-	"helpers/size",
-	"helpers/screen-readers";
-
 // Modules
 // prettier-ignore
 @import 
@@ -55,3 +49,9 @@
 	"modules/white-space",
 	"modules/width",
 	"modules/z-index";
+
+// Helpers
+// prettier-ignore
+@import 
+	"helpers/size",
+	"helpers/screen-readers";
