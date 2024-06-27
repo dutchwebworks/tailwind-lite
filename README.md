@@ -3,7 +3,9 @@
 _By Dutchwebworks, May 2024_
 
 * Inpsired by [TailwindCSS](https://tailwindcss.com/)
-* Interesting [Building TailwindCSS with Sass](https://dpnkr.in/blog/building-tailwind)
+* Interesting:
+	* [Building TailwindCSS with Sass](https://dpnkr.in/blog/building-tailwind)
+	* [Tailwind Lite](https://tailwind-lite.com/)
 
 
 ## Custom lite version
