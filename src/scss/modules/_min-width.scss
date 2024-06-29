@@ -1,5 +1,5 @@
 @for $i from 0 through 50 {
 	.min-width-#{$i * 10} {
-		min-width: #{($i * 10)} + "px";
+		min-width: #{$i} * 10px;
 	}
 }

@@ -10,15 +10,12 @@ _By Dutchwebworks, May 2024_
 
 ## Custom lite version
 
-The CSS file `./dist/tailwind-lite.css` contains a custom build lite version of Tailwind inspired classes.
+The CSS file `./dist/tailwind-lite.min.css` contains a custom build lite version of Tailwind inspired classes.
 
 You could include it in your HTML like:
 
 ```html
-<link
-	rel="stylesheet"
-	href="https://raw.githubusercontent.com/dutchwebworks/tailwind-lite/master/dist/css/tailwind-lite.css"
-/>
+<link rel="stylesheet" href="https://raw.githubusercontent.com/dutchwebworks/tailwind-lite/master/dist/css/tailwind-lite.min.css" />
 ```
 
 ## Install
@@ -33,7 +30,13 @@ npm install
 npm run build
 ```
 
-As of this writing there is no `tailwind-lite.min.css` yet.
+This will create the following files:
+
+* `./dist/tailwind-lite.css`
+* `./dist/tailwind-lite.css.map`
+* `./dist/tailwind-lite.min.css`
+
+Use the `tailwind-lite.min.css` on production (gzip / brotli compress it as well).
 
 ## Watch for development
 

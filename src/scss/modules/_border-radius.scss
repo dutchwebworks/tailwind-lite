@@ -1,5 +1,5 @@
 @for $i from 0 through 20 {
 	.rounded-#{$i} {
-		border-radius: #{$i} + "px";
+		border-radius: #{$i}px;
 	}
 }

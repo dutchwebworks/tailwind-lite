@@ -1,5 +1,5 @@
 @for $i from 0 through 50 {
 	.height-#{$i * 10} {
-		height: #{($i * 10)} + "px";
+		height: #{$i} * 10px;
 	}
 }

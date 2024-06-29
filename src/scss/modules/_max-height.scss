@@ -1,5 +1,5 @@
 @for $i from 0 through 50 {
 	.max-height-#{$i * 10} {
-		max-height: #{($i * 10)} + "px";
+		max-height: #{$i} * 10px;
 	}
 }
